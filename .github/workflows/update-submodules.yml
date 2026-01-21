@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: false
+          submodules: true
           token: ${{ secrets.GITHUB_TOKEN }}  # 自动获取，无需手动配置
       - name: Sync submodule URLs and update pointers
         run: |
