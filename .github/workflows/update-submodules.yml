@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - ".gitmodules"  # 当 .gitmodules 被修改时触发
+      - "/hbb_common"  # 当 .gitmodules 被修改时触发
 jobs:
   update-submodules:
     runs-on: ubuntu-latest
